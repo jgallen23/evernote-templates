@@ -1,0 +1,20 @@
+{
+  "name": "evernote-templates",
+  "description": "",
+  "homepage": "",
+  "author": "Greg Allen <@jgaui> (http://jga.me)",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jgallen23/evernote-templates.git"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "juice": "*",
+    "ejs": "*"
+  },
+  "main": "",
+  "bin": {
+  }
+}

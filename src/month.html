@@ -1,0 +1,42 @@
+<% var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'] %>
+<% var cols = 4 %>
+<style>
+	table {
+		border-collapse: collapse;
+		width: 100%;
+	}
+	td {
+    width: <%= 100 / cols %>%;
+	}
+	td {
+		border: 1px solid #ccc;
+		padding: 4px;
+		valign: top;
+	}
+	small {
+		display: block;
+		background: #f0f0f0;
+		padding: 5px;
+    font-family: "HelveticaNeue-Light";
+	}
+	p {
+		min-height: 100px;
+	}
+</style>
+<table>
+  <% months.forEach(function(month, i) { %>
+    <% if (i % cols == 0) { %>
+    <tr>
+    <% } %>
+      <td valign="top" colspan="<%= cols %>">
+        <small><%= month %></small>
+        <p></p>
+        <!--<ul>-->
+          <!--<li>&nbsp;</li>-->
+        <!--</ul>-->
+      </td>
+    <% if (i % cols == cols-1) { %>
+    </tr>
+    <% } %>
+  <% }) %>
+</table>
