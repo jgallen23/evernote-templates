@@ -12,7 +12,7 @@
   },
   "devDependencies": {
     "juice": "*",
-    "ejs": "*"
+    "ejs": ">=2.5.6"
   },
   "main": "",
   "bin": {
